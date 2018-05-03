@@ -245,8 +245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eb467fec3e985e44aede8c4831fdcbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumppower: 1
-  isGrounded: 0
+  jumppower: 2
+  isGrounded: 1
 --- !u!1 &1804989383
 GameObject:
   m_ObjectHideFlags: 0
