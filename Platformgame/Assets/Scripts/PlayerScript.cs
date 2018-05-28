@@ -10,12 +10,14 @@ public class PlayerScript : MonoBehaviour {
     float posX = 0.0f;
     bool isGameOver = false;
     ChallengeController myChallengeController;
+    GameController myGameController;
 
 	// Use this for initialization
 	void Start () {
         myRigidbody = transform.GetComponent<Rigidbody2D>();
         posX = transform.position.x;
         myChallengeController = GameObject.FindObjectOfType<ChallengeController>();
+        myGameController = GameObject.FindObjectOfType<GameController>();
 	}
 	
 	// Update is called once per frame
@@ -44,6 +46,10 @@ public class PlayerScript : MonoBehaviour {
         if (other.collider.tag == "Ground") {
             isGrounded = true;
         }
+        if (other.collider.tag == "Enemy")
+        {
+            GameOver();
+        }
 
     }
     void OnCollosionStay2D(Collision2D other)
@@ -58,6 +64,15 @@ public class PlayerScript : MonoBehaviour {
         if (other.collider.tag == "Ground")
         {
             isGrounded = false;
+        }
+    }
+
+    void OntriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Star")
+        {
+            myGameController.IncrementScore();
+            Destroy(other.gameObject);
         }
     }
 }
