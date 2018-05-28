@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChallengeController : MonoBehaviour {
 
-    public float scrollerSpeed = 5.0f;
+    public float scrollerSpeed = 3.0f;
     public GameObject[] challenges;
     public float frequency = 0.5f;
     float counter = 0.0f;
