@@ -44,6 +44,7 @@ public class PlayerScript : MonoBehaviour {
         if (other.collider.tag == "Ground") {
             isGrounded = true;
         }
+
     }
     void OnCollosionStay2D(Collision2D other)
     {
