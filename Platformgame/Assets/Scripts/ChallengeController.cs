@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ChallengeController : MonoBehaviour {
 
-    public float scrollerSpeed = 5.0f;
+    public float scrollerSpeed = 0.5f;
     public GameObject[] challenges;
-    public float frequency = 0.5f;
+    public float frequency = 5.0f;
     float counter = 0.0f;
     public Transform challengesSpawnPoint;
     bool isGameOver = false;

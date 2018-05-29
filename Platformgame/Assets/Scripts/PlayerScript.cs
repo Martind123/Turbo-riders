@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour {
 
-    public float jumppower = 10.0f; 
+    public float jumppower = 7.0f; 
     Rigidbody2D myRigidbody;
     public bool isGrounded = false;
     float posX = 0.0f;
@@ -46,12 +46,10 @@ public class PlayerScript : MonoBehaviour {
         if (other.collider.tag == "Ground") {
             isGrounded = true;
         }
-        if (other.collider.tag == "Enemy")
-        {
-            GameOver();
-        }
+        
 
     }
+    
     void OnCollosionStay2D(Collision2D other)
     {
         if (other.collider.tag == "Ground")
@@ -67,7 +65,7 @@ public class PlayerScript : MonoBehaviour {
         }
     }
 
-    void OntriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Star")
         {
