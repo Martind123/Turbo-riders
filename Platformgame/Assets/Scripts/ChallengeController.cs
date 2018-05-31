@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChallengeController : MonoBehaviour {
 
-    public float scrollerSpeed = 0.5f;
+    public float scrollerSpeed = 5.0f;
     public GameObject[] challenges;
     public float frequency = 5.0f;
     float counter = 0.0f;
@@ -53,7 +53,7 @@ public class ChallengeController : MonoBehaviour {
     {
         GameObject newChallenge = Instantiate(challenges[Random.Range(0, challenges.Length)], challengesSpawnPoint.position, Quaternion.identity) as GameObject;
         newChallenge.transform.parent = transform;
-        counter = 1.0f;
+        counter = 1.25f;
     }
     public void GameOver()
     {

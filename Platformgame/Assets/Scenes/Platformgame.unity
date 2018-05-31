@@ -1053,6 +1053,9 @@ MonoBehaviour:
   - {fileID: 1360124793134146, guid: 7344b0ae4d4cc074caabea7a89fc5701, type: 2}
   - {fileID: 1406746469467480, guid: 8926b5f0a34207a41820af6ed4f5261b, type: 2}
   - {fileID: 1144410453198662, guid: 0afa4f1e9c82850488e336f84d1c4bcf, type: 2}
+  - {fileID: 1923483389558404, guid: 0b4bb84e4c6687b43a195b204bd5b8db, type: 2}
+  - {fileID: 1037409418398200, guid: b81f1bdf134f36d4a9be4083a01877d5, type: 2}
+  - {fileID: 1920416885658696, guid: 73acb9c3e3cfb86499f0a240555ecb71, type: 2}
   frequency: 0.5
   challengesSpawnPoint: {fileID: 2013234314}
 --- !u!114 &1509761514
@@ -1589,8 +1592,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2053867357}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.389, y: -4.271, z: -0.014802271}
-  m_LocalScale: {x: 19.426085, y: 3.098307, z: 1}
+  m_LocalPosition: {x: -0.027, y: -4.271, z: -0.014802271}
+  m_LocalScale: {x: 20.258139, y: 3.098307, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
